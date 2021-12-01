@@ -494,7 +494,7 @@ section.exhibition-section {
   background-repeat: no-repeat;
 }
 
-.grid-item-content h4 {
+.grid-item-content h3 {
   color: var(--site-color);
 }
 
