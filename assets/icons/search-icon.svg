@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="101.761" height="102" viewBox="0 0 101.761 102">
+  <g id="search-icon" transform="translate(-0.239)">
+    <path id="Search" d="M58.3,14a44.3,44.3,0,1,0,27.88,78.676l19.981,19.981a4.6,4.6,0,0,0,6.493,0,4.538,4.538,0,0,0,0-6.445L92.676,86.231A44.286,44.286,0,0,0,58.3,14Zm0,9.166A35.137,35.137,0,1,1,23.166,58.3,35.068,35.068,0,0,1,58.3,23.166Z" transform="translate(-12 -12)" fill="#00064a"/>
+    <rect id="Container" width="24" height="24" transform="translate(0.239)" fill="none"/>
+  </g>
+</svg>

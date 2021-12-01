@@ -1,0 +1,1387 @@
+/* ############### Website Global Styles ###############  */
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  /* <<<------------------ Global Variables ---------------->>> */
+  --site-color: #f5f6f9;
+  --headings-color: #00064a;
+  --paragraph-color: #343869;
+  --text-link-color: #00064a;
+
+  --bold-heading: 700;
+  --bold-text-link: 700;
+  --heading-margins: 1.2em 0;
+
+  --primary-color: #ae06d8;
+  --secondary-color: #ff9c08;
+  --tertiary-color: #3a85dc;
+  --quaternary-color: #7722ff;
+
+  --primary-cta--bg-color: #ff9c08;
+  --primary-cta--color: #f5f6f9;
+  --primary-cta--font-size: 0.9em;
+  --primary-cta--border-radius: 0.43em;
+
+  --secondary-cta--bg-color: #ae06d8;
+  --secondary-cta--color: #f5f6f9;
+  --secondary-cta--font-size: 0.9em;
+  --secondary-cta--border-radius: 0.43em;
+
+  --outline-cta--bg-color: #f5f6f9;
+  --outline-cta--color: #ae06d8;
+  --outline-cta--border-radius: 1px solid #ae06d8;
+  --outline-cta--border-radius: 0.43em;
+
+  --small-cta--bg-color: #ae06d8;
+  --small-cta--color: #f5f6f9;
+  --small-cta--font-size: 0.8em;
+  --small-cta--border-radius: 0.43em;
+
+  --link-cta--color: #00064a;
+  --link-cta--font-size: 0.9em;
+}
+
+/* <<<------------------ Body Global Styles ---------------->>> */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: "Playfair Display", Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--site-color);
+  color: var(--paragraph-color);
+  font-weight: 400;
+  line-height: 1.5em;
+  min-height: 100vh;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* <<<------------------ Container Global Styles ---------------->>> */
+.container {
+  /* background-color: yellow; */
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 1.5em;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* <<<------------------ Section Global Styles ---------------->>> */
+section {
+  padding: 10em 0;
+  margin: 0;
+}
+
+/* <<<------------------ Image Global Styles ---------------->>> */
+img {
+  width: 100%;
+}
+
+/* <<<------------------ Links Global Styles ---------------->>> */
+a {
+  text-decoration: none;
+  color: var(--headings-color);
+  font-weight: 500;
+}
+
+/* <<<------------------ Font Global Styles ---------------->>> */
+h1,
+h4 {
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  color: var(--headings-color);
+}
+
+h2,
+h3,
+h5,
+h6 {
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  color: var(--headings-color);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.2em;
+  margin: 0 0 1.25rem;
+}
+h2 {
+  font-size: 2.9em;
+  line-height: 1.2em;
+  margin: 0 0 1.25rem;
+}
+h3 {
+  font-size: 2.5em;
+  line-height: 1.2em;
+  margin: 0 0 1.25rem;
+}
+h4 {
+  font-size: 1.85em;
+  line-height: 1.3em;
+  margin: 0 0 1.25rem;
+}
+h5 {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  margin: 0 0 1.25rem;
+}
+h6 {
+  font-size: 1.25em;
+  line-height: 1.3em;
+  margin: 0 0 1.25rem;
+}
+
+.small-p {
+  font-size: 0.8em;
+  color: var(--paragraph-color);
+  font-weight: 400;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 1.25rem;
+}
+
+.large-p {
+  font-size: 1.25em;
+  color: var(--paragraph-color);
+  font-weight: 400;
+  margin: 0 0 1.25rem;
+}
+
+/* <<<------------------ Buttons Global Styles ---------------->>> */
+.primary-cta {
+  display: inline-block;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: var(--primary-cta--font-size);
+  background-color: var(--primary-cta--bg-color);
+  color: var(--primary-cta--color);
+  border-radius: var(--primary-cta--border-radius);
+  padding: 20px 64px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.secondary-cta {
+  display: inline-block;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: var(--secondary-cta--font-size);
+  background-color: var(--secondary-cta--bg-color);
+  color: var(--secondary-cta--color);
+  border-radius: var(--secondary-cta--border-radius);
+  padding: 15px 44px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.small-cta {
+  display: inline-block;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: var(--small-cta--font-size);
+  background-color: var(--small-cta--bg-color);
+  color: var(--small-cta--color);
+  padding: 11px 20px;
+  border-radius: var(--small-cta--border-radius);
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.link-cta {
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  --link-cta--color: #00064a;
+  --link-cta--font-size: 0.9em;
+  cursor: pointer;
+}
+
+/* ############### Navigation ############### */
+
+header {
+  background: white;
+}
+
+.home-header {
+  display: flex;
+  padding: 2em 1.5em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-logo-desktop {
+  display: flex;
+  align-items: flex-start;
+  height: 2.8em;
+}
+
+.nav-logo-mobile {
+  display: none;
+}
+
+.nav-logo-desktop img {
+  width: 10em;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  flex-direction: column-reverse;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 2em;
+  margin-left: auto;
+}
+nav a:active {
+  text-decoration: underline 0.2em solid var(--text-link-color);
+}
+
+.primary-nav {
+  display: flex;
+  width: 100%;
+  gap: 2em;
+  margin-top: 1em;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondary-nav {
+  display: flex;
+  gap: 2em;
+  width: 100%;
+  align-items: center;
+}
+.social-links--mobile-nav {
+  display: none;
+}
+nav img {
+  width: 1em;
+}
+
+#hamburger-checkbox {
+  display: none;
+}
+
+.home-header label {
+  font-size: 31px;
+  font-weight: 900;
+  display: none;
+}
+
+/* ###############================ Home Page ===============############### */
+
+/* <<<------------------ Hero Section ---------------->>> */
+
+.home-hero-section {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/assets/images/science-kidd.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* height: 80vh; */
+  position: relative;
+}
+
+.hero-content {
+  width: 60%;
+  /* margin-bottom: 4em; */
+}
+.hero-content h1,
+.p-large {
+  color: var(--site-color);
+}
+
+/* <<<------------------ Explore Section ---------------->>>  */
+
+section.explore-section {
+  padding-bottom: 0;
+}
+
+.explore-section {
+  position: relative;
+  padding-top: 0;
+  top: 0;
+  left: 0;
+  transform: translate(0%, -10%);
+  z-index: 1;
+}
+
+.card-wrapper {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  margin: 2em auto;
+}
+
+.large-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  background: white;
+  border-radius: 1em;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 20%);
+}
+
+.large-card-content {
+  display: flex;
+  width: 100%;
+}
+
+.card-cta-content {
+  display: flex;
+  align-items: flex-start;
+  color: var(--site-color);
+  padding: 2em;
+  flex: 1 1 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card-img-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--site-color);
+  padding: 2em;
+  flex: 1 1 100%;
+  justify-content: center;
+}
+
+.card-img-content.img-1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/science--for-kids.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-img-content.img-2 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/science-for-teachers.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-img-content.img-3 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/science-researchers.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.large-card .primary-title,
+.secondary-title {
+  color: var(--site-color);
+}
+
+.large-card .content-1 {
+  background: var(--primary-color);
+}
+
+.large-card .content-2 {
+  background: var(--tertiary-color);
+}
+
+.large-card .content-3 {
+  background: var(--quaternary-color);
+}
+
+.large-card .content-1 .small-cta {
+  background: var(--secondary-color);
+}
+
+.large-card .content-2 .small-cta {
+  background: var(--primary-color);
+}
+
+.large-card .content-3 .small-cta {
+  background: var(--tertiary-color);
+}
+
+/* <<<------------------ Exhibition Section ---------------->>>  */
+
+section.exhibition-section {
+  padding-top: 0;
+}
+
+.grid-header {
+  text-align: center;
+  font-weight: 300;
+}
+
+.grid-header .large-p {
+  text-align: center;
+  font-weight: 300;
+}
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  margin-top: 4em;
+}
+
+.grid-item {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.grid-item-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  border-radius: 1em;
+  width: 100%;
+  height: 15em;
+}
+
+.content-1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/robotics-ai.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-2 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/cosmology.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-3 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/bioligy-medicine.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-4 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/evolution.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-5 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/ecology.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid-item-content h4 {
+  color: var(--site-color);
+}
+
+/* <<<------------------ Events Section ---------------->>>  */
+
+.events-section {
+  background: var(--primary-color);
+}
+
+.events-section h2,
+.events-section .large-p {
+  color: var(--site-color);
+}
+
+.event {
+  display: flex;
+  height: 8em;
+}
+
+.grid-item-img {
+  display: flex;
+  flex: 0 0 7em;
+}
+
+.grid-item-img img {
+  object-fit: cover;
+  border-radius: 1em 0 0 1em;
+}
+
+.event-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.8em;
+  background: white;
+  flex: 1 1 100%;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 0 1em 1em 0;
+}
+
+.content-top {
+  border-bottom: 0.5px solid #d1d1d1;
+  padding-bottom: 0.3em;
+}
+
+.content-top .small-p {
+  font-family: Poppins;
+  font-weight: 500;
+}
+
+.content-bottom .small-p {
+  font-family: Poppins;
+  font-weight: 300;
+}
+
+.centered-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+/* <<<------------------ Shop / Drinks / Food Section ---------------->>>  */
+
+.split-section {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 4em;
+  justify-content: center;
+  align-items: center;
+}
+
+.reverse {
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6em;
+}
+
+.img-content {
+  flex: 1 1 50%;
+}
+
+.img-content img {
+  height: 20em;
+  border-radius: 1em;
+  object-fit: cover;
+}
+
+.split-content {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* <<<------------------ Get Involved Section ---------------->>>  */
+
+section.get-involved-section {
+  padding-top: 0;
+}
+
+.three-col-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2em;
+  row-gap: 2em;
+}
+
+.first-card {
+  display: flex;
+  grid-column: 1 / span 3;
+  background: white;
+  margin-top: 0.5em;
+  padding: 4em;
+  flex-direction: column;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 20%);
+  border-radius: 1em;
+}
+.first-card-content {
+  display: flex;
+  gap: 4em;
+}
+
+.card-address img,
+.card-phone-nr img {
+  width: 1em;
+  color: var(--text-link-color);
+}
+
+.card-text {
+  flex: 0 0 60%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.card-contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.6em;
+  font-family: "Poppins";
+}
+
+.card-address {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.card-phone-nr {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.call-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--quaternary-color);
+  padding: 2em;
+  color: var(--site-color);
+  border-radius: 1em;
+}
+
+.third-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--primary-color);
+  padding: 2em;
+  color: var(--site-color);
+  border-radius: 1em;
+}
+
+.fourth-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--tertiary-color);
+  padding: 2em;
+  color: var(--site-color);
+  border-radius: 1em;
+}
+
+.second-card h6,
+.third-card h6,
+.fourth-card h6 {
+  color: var(--site-color);
+  font-weight: 500;
+}
+
+/* <<<------------------ Testimonial Section ---------------->>>  */
+
+.testimonial-section {
+  background: var(--primary-color);
+}
+
+.testimonial h2,
+.testimonial .large-p,
+.testimonial .small-p {
+  color: var(--site-color);
+}
+
+.testimonial .small-p {
+  font-family: poppins;
+  font-weight: 300;
+}
+
+.testimonial h6 {
+  color: var(--site-color);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2em;
+  background: white;
+  border-radius: 1em;
+  width: 70%;
+}
+
+.subscription-form h5 {
+  margin-bottom: 0.3em;
+}
+
+.form-field--email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1em;
+  width: 100%;
+  gap: 1em;
+}
+
+input {
+  position: relative;
+  height: 2.9em;
+  width: 100%;
+  margin: 0 auto;
+  border: 0.2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.5em;
+}
+
+.form-input {
+  position: relative;
+  width: 50%;
+}
+
+.form-btn {
+  display: inline-block;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: var(--secondary-cta--font-size);
+  background-color: var(--secondary-cta--bg-color);
+  color: var(--secondary-cta--color);
+  border-radius: var(--secondary-cta--border-radius);
+  text-align: center;
+  width: 160px;
+  padding: 8px 40px;
+  cursor: pointer;
+  margin-right: 2em;
+}
+
+/* <<<------------------ Carousel  ---------------->>>  */
+
+/* .carousel-wrapper {
+  display: flex;
+  overflow-y: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 30em;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  scroll-snap-align: start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1em;
+  margin: 0.5em;
+  background: white;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 20%);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.slide-card {
+  display: flex;
+  height: 100%;
+}
+
+.slide-img-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--site-color);
+  padding: 2em;
+  flex: 1 1 100%;
+  justify-content: center;
+}
+
+.slide-card .img-1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/science--for-kids.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.slide-card .img-2 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/science-for-teachers.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.slide-card .img-3 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/science-researchers.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide-cta-content {
+  display: flex;
+  align-items: flex-start;
+  color: var(--site-color);
+  padding: 2em;
+  flex: 1 1 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.slide-card .content-1 {
+  background: var(--primary-color);
+}
+
+.slide-card .content-2 {
+  background: var(--tertiary-color);
+}
+
+.slide-card .content-3 {
+  background: var(--quaternary-color);
+}
+
+.slide-card .primary-title,
+.secondary-title {
+  color: var(--site-color);
+}
+
+.slide-card .content-1 .small-cta {
+  background: var(--secondary-color);
+}
+
+.slide-card .content-2 .small-cta {
+  background: var(--primary-color);
+}
+
+.slide-card .content-3 .small-cta {
+  background: var(--tertiary-color);
+}
+
+.arrow {
+  border: solid #919191;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 0.3em;
+}
+.arrow-prev {
+  left: 45%;
+  position: absolute;
+  transform: translateY(300%) rotate(135deg);
+}
+.arrow-next {
+  right: 45%;
+  position: absolute;
+  transform: translateY(300%) rotate(-45deg);
+}
+
+[id^="slide"] {
+  display: none;
+}
+.slide-1 {
+  z-index: 2;
+  opacity: 1;
+}
+
+*:target ~ .slide-1 {
+  opacity: 0;
+}
+#slide-1:target ~ .slide-1 {
+  opacity: 1;
+}
+#slide-2:target ~ .slide-2,
+#slide-3:target ~ .slide-3 {
+  z-index: 3;
+  opacity: 1;
+} */
+
+/* ############### Footer ############### */
+
+footer {
+  background: white;
+  padding: 4em 0 2em 0;
+}
+
+.footer-main {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.footer-main a,
+.footer-main p,
+.footer-bottom .small-p {
+  color: var(--paragraph-color);
+  font-family: Poppins;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.footer-logo {
+  display: flex;
+  grid-column: 1 / span 4;
+  grid-row: 2;
+  gap: 1em;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2em;
+}
+
+.footer-logo img {
+  width: 5em;
+}
+
+.footer-address {
+  display: flex;
+  grid-column: 1 / 2;
+  grid-row: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  width: 100%;
+}
+
+.footer-address-content img {
+  width: 1em;
+}
+
+.opening-hours-img img {
+  width: 1em;
+}
+
+.footer-address-content,
+.opening-hours--footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  flex-direction: column;
+}
+.opening-hours--footer p:first-of-type {
+  margin-top: 0%;
+}
+
+.footer-nav {
+  display: flex;
+  grid-column: 2 / span 3;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.nav-links--footer {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+.nav-links--footer p {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+.social-links--footer {
+  display: flex;
+  gap: 2em;
+}
+.social-links--footer img {
+  width: 2em;
+}
+.footer-bottom {
+  display: flex;
+  grid-area: footer-bottom;
+  grid-column: 1 / 5;
+  display: flex;
+  gap: 2em;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.policies {
+  display: flex;
+  gap: 2em;
+}
+
+/* ############### Media Queries (max-width: 800px) Equal to 800px or less ############### */
+
+/* <<<------------------ Global Styles  ---------------->>> (max-width: 800px) */
+
+@media (max-width: 800px) {
+  section {
+    padding: 6em 0;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2.3em;
+  }
+
+  h3 {
+    font-size: 1.9em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+  h5 {
+    font-size: 1.3em;
+  }
+  h6 {
+    font-size: 1.1em;
+  }
+
+  /* ###############================ Home Page ===============############### */
+
+  /* <<<------------------ Hero Section ---------------->>>  (max-width: 800px) */
+
+  .hero-content {
+    width: 80%;
+    margin-bottom: 3em;
+  }
+
+  /* <<<------------------ Get Involved Section ---------------->>>  */
+
+  .three-col-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .first-card-content {
+    gap: 1em;
+    flex-direction: column;
+  }
+
+  .first-card {
+    display: flex;
+    grid-column: 1 / span 4;
+  }
+
+  .second-card {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / span 2;
+  }
+  .third-card {
+    grid-column: 3 / span 2;
+  }
+  .fourth-card {
+    grid-column: 1 / span 4;
+  }
+
+  /* <<<------------------ Testimonial Section ---------------->>>  */
+
+  .form-input {
+    position: relative;
+    width: 100%;
+  }
+
+  .form-btn {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* ############### Footer ############### (max-width: 800px) */
+
+  .footer-logo {
+    align-items: flex-start;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    width: 100%;
+  }
+
+  .footer-address {
+    grid-column: 3 / 5;
+    display: flex;
+  }
+
+  .footer-address-content,
+  .opening-hours--footer {
+    gap: 1em;
+    width: 100%;
+  }
+
+  .footer-nav {
+    display: flex;
+    grid-column: 1 / span 5;
+  }
+
+  .footer-bottom {
+    grid-column: 1 / span 5;
+    grid-row: 3;
+    gap: 0;
+    padding-top: 2em;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* ############### Media Queries (max-width: 640px) Equal to 640px or less ############### */
+/* ############### Navigation ############### (max-width: 640px) */
+
+@media (max-width: 640px) {
+  .home-header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  nav {
+    padding-top: 1.5em;
+    display: none;
+  }
+
+  .nav-logo-desktop {
+    display: none;
+  }
+
+  .nav-logo-mobile {
+    display: flex;
+  }
+
+  .nav-logo-mobile img {
+    width: 10em;
+  }
+
+  #hamburger-checkbox:checked ~ nav {
+    display: flex;
+  }
+
+  .home-header label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .primary-nav {
+    margin: 2em auto;
+    flex-direction: column;
+  }
+
+  .secondary-nav {
+    margin: 2em auto;
+    flex-direction: column;
+  }
+
+  .nav-icons {
+    margin-left: 0;
+  }
+
+  .social-links--mobile-nav {
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    justify-content: center;
+  }
+  .social-links--mobile-nav img {
+    width: 2em;
+  }
+
+  /* ###############================ Home Page ===============############### */
+
+  /* <<<------------------ Hero Section ---------------->>>  (max-width: 640px)*/
+
+  .home-hero-section {
+    background-position: center;
+    /* height: 100vh; */
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  /* <<<------------------ Explore Section ---------------->>>  (max-width: 640px) */
+
+  .explore-section {
+    transform: translate(0%, -5%);
+  }
+
+  .large-card-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .card-cta-content,
+  .card-img-content {
+    padding: 1em;
+    align-items: flex-start;
+  }
+
+  .card-img-content.img-1,
+  .card-img-content.img-2,
+  .card-img-content.img-3 {
+    flex-basis: 15em;
+  }
+
+  .card-img-content.img-1 {
+    background-position: left;
+  }
+
+  .card-img-content.img-2 {
+    background-position: right;
+  }
+
+  .card-img-content.img-3 {
+    background-position: left;
+  }
+
+  /* <<<------------------ Exhibition Section ---------------->>> (max-width: 640px) */
+
+  .two-col-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    margin-top: 3em;
+  }
+
+  /* <<<------------------ Shop / Drinks / Food Section ---------------->>> (max-width: 640px) */
+
+  .split-section {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .img-content img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* <<<------------------ Get Involved Section ---------------->>> (max-width: 640px)  */
+
+  .first-card {
+    grid-column: 1 / span 4;
+    padding: 2em;
+  }
+
+  .first-card-content {
+    gap: 1em;
+    flex-direction: column;
+  }
+
+  .second-card,
+  .third-card,
+  .fourth-card {
+    grid-column: 1 / span 4;
+  }
+
+  /* <<<------------------ Testimonial Section ---------------->>>  */
+
+  .testimonial {
+    width: 100%;
+  }
+
+  .subscription-form {
+    width: 100%;
+  }
+
+  /* ############### Footer ############### (max-width: 640px) */
+  .footer-logo {
+    grid-column: 1 / 5;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .footer-address {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    padding-top: 2em;
+    align-items: flex-start;
+  }
+
+  .footer-address-content,
+  .opening-hours--footer,
+  .opening-hours-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-address-content,
+  .opening-hours--footer {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+  }
+  .footer-nav {
+    grid-column: 1 / span 4;
+    gap: 4em;
+  }
+
+  .nav-links--footer {
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer-bottom {
+    grid-column: 1 / span 5;
+    grid-row: 5;
+    padding-top: 1em;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  /* <<<------------------ Carousel  ---------------->>>  */
+
+  /* .carousel-wrapper {
+    height: 45em;
+  }
+
+  .slide-card {
+    flex-direction: column;
+  }
+
+  .slide-img-content {
+    flex-basis: 15em;
+  }
+
+  .arrow-prev {
+    left: 35%;
+  }
+  .arrow-next {
+    right: 35%;
+  } */
+}
+
+/* ############### Media Queries (max-width: 800px) Equal to 800px or less ############### */
+
+/* <<<------------------ Global Styles  ---------------->>> (max-width: 800px) */
+
+/* ###############================ Home Page ===============############### */
+
+/* <<<------------------ Hero Section ---------------->>>  (max-width: 800px) */
+
+@media (min-width: 1441px) {
+  .home-hero-section {
+    /* height: 70vh; */
+    padding-top: 12em;
+  }
+}
