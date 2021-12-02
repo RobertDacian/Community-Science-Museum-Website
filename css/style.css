@@ -144,6 +144,7 @@ h6 {
   font-size: 14px;
   color: var(--paragraph-color);
   font-weight: 400;
+  line-height: 1.5em;
   margin: 0;
 }
 
@@ -301,8 +302,8 @@ nav img {
   width: 60%;
   /* margin-bottom: 4em; */
 }
-.hero-content h1,
-.p-large {
+.home-hero-section p,
+h1 {
   color: var(--site-color);
 }
 
@@ -1041,18 +1042,18 @@ footer {
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   h3 {
     font-size: 30px;
   }
   h4 {
-    font-size: 22px;
+    font-size: 24px;
   }
   h5 {
     font-size: 20px;
@@ -1149,6 +1150,10 @@ footer {
 /* ############### Navigation ############### (max-width: 640px) */
 
 @media (max-width: 640px) {
+  .container {
+    width: 100vw;
+    padding: 0 1.5em;
+  }
   .home-header {
     flex-wrap: wrap;
     justify-content: space-between;
