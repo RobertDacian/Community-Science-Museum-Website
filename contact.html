@@ -5,10 +5,348 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
+  <meta name="description"
+    content="Join the Community Science Museum where we’re committed to making science accessible to all." />
+  <title>Community Science Museum | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@300;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/4296b0387b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+  <header>
+    <div class="home-header">
+      <div class="nav-logo-mobile">
+        <a href="index.html" class="logo"><img src="./assets/images/community-science-museum-logo.png"
+            alt="Website logo"></a>
+      </div>
+      <input type="checkbox" id="hamburger-checkbox">
+      <label for="hamburger-checkbox"><i class="fas fa-bars"></i></label>
+      <nav>
+        <div class="primary-nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="shop.html">Explore</a>
+          <a href="about.html">Exhibitions</a>
+          <a href="contact.html">About</a>
+          <a href="contact.html">Events</a>
+          <div class="social-links--mobile-nav">
+            <a href="https://www.facebook.com/" target="_blank"><img src="assets/icons/facebook-icon.svg"
+                alt="Follow us on Facebook"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="assets/icons/twitter-icon.svg"
+                alt="Follow us on Twitter"></a>
+            <a href="https://www.instagram.com/accounts/login/" target="_blank"><img
+                src="assets/icons/instagram-icon.svg" alt="Follow us on Instagram"></a>
+          </div>
+        </div>
+        <div class="secondary-nav">
+          <div class="nav-logo-desktop">
+            <a href="index.html" class="logo"><img src="./assets/images/community-science-museum-logo.png"
+                alt="Website logo"></a>
+          </div>
+          <div class="nav-icons">
+            <a href="contact.html">MEMBERSHIP</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="#" class="small-cta">BOOK A TOUR</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+
+    <section class="bg-hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1>CONTACT</h1>
+          <div class="breadcrumbs">
+            <p>Home</p>
+            <i class="fas fa-long-arrow-alt-right"></i>
+            <p>Contact</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-info">
+          <h2>VISIT US</h2>
+          <p>Come join us at the Community Science Museum where we’re committed to making
+            science accessible to all.</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info-card">
+            <div class="contact-info-card--top">
+              <div class="info-card-location">
+                <div class="info-card-location--content">
+                  <h6>LOCATION</h6>
+                  <a href="https://goo.gl/maps/duVrtkXXQ1BkqTgGA" class="go-to-address" target="_blank">
+                    Frognerveien 67, 0266
+                    Oslo, Norway
+                  </a>
+                </div>
+              </div>
+              <div class="info-card-contacts">
+                <div class="info-card-contacts--content">
+                  <h6>CONTACTS</h6>
+                  <a href="tel:+47-469-00-000">+47 469 00 000</a>
+                  <a href="tel:+47-987-98-765">+47 987 98 765</a>
+                  <a href="mailto:museum@gmail.com">museum@gmail.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-info-card--bottom">
+              <a href="https://www.facebook.com/" target="_blank"><img src="assets/icons/facebook-white.svg"
+                  alt="Follow us on Facebook"></a>
+              <a href="https://twitter.com/" target="_blank"><img src="assets/icons/twitter-white.svg"
+                  alt="Follow us on Twitter"></a>
+              <a href="https://www.instagram.com/accounts/login/" target="_blank"><img
+                  src="assets/icons/insta-white.svg" alt="Follow us on Instagram"></a>
+            </div>
+          </div>
+          <div class="contact-info-card-img">
+            <img src="/assets/images/science-kidd.jpg" alt="Science kid image">
+          </div>
+        </div>
+        <div class="contact-content">
+          <form class="contact-form" action="#" method="GET">
+            <div class="contact-detail">
+              <div class="form-field">
+                <label for="name">
+                  <p class="small-p">Your Name</p>
+                </label>
+                <input id="name" type="text" name="name" autocomplete="name" maxlength="100" pattern="[\p{L} \-\.]+"
+                  required>
+              </div>
+              <div class="form-field">
+                <label for="email">
+                  <p class="small-p">Email Address</p>
+                </label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-field">
+                <label for="address">
+                  <p class="small-p">Your Message</p>
+                </label>
+                <textarea id="message" name="message" autocomplete="message" maxlength="300" required></textarea>
+              </div>
+              <div class="form-submit-btn">
+                <input id="submit" type="submit" value="SEND">
+              </div>
+            </div>
+          </form>
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7997.958639149929!2d10.7031923!3d59.9240167!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416dce52e02265%3A0x7e9654dafaf25cda!2sFrognerveien%2067%2C%200266%20Oslo%2C%20Norway!5e0!3m2!1sen!2sbr!4v1638921327207!5m2!1sen!2sbr"
+              width="100%" height="334px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="events-section events-contact">
+      <div class="container">
+        <div class="grid-header">
+          <h2>EVENTS</h2>
+          <P>Special events and exhibitions</P>
+        </div>
+        <div class="two-col-grid">
+
+          <div class="grid-item event">
+            <div class="grid-item-img ">
+              <img src="/assets/images/aeronautics-profesor.jpg" alt="Image with the aeronautics-professor">
+            </div>
+            <div class="event-content">
+              <div class="content-top">
+                <a href="https://www.w3schools.com/tags/ref_pxtoemconversion.asp" target="_blank">
+                  <p class="small-p">VISITING PROFESSOR OF
+                    AERONAUTICS</p>
+                </a>
+              </div>
+              <div class="content-bottom">
+                <p class="small-p">Fri, July 15, 2022</p>
+                <p class="small-p">8:00 AM - 10:00 AM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item event">
+            <div class="grid-item-img ">
+              <img src="/assets/images/night-museum.jpg" alt="Night at the museum">
+            </div>
+            <div class="event-content">
+              <div class="content-top">
+                <a href="https://www.w3schools.com/tags/ref_pxtoemconversion.asp" target="_blank">
+                  <p class="small-p">NIGHT AT THE
+                    MUSEUM</p>
+                </a>
+              </div>
+              <div class="content-bottom">
+                <p class="small-p">Thu, March 25, 2022
+                </p>
+                <p class="small-p">9:00 AM - 11:00 AM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item event">
+            <div class="grid-item-img">
+              <img src="/assets/images/ebergetica-exhibition.jpg" alt="Energy exhibition image">
+            </div>
+            <div class="event-content">
+              <div class="content-top">
+                <a href="https://www.w3schools.com/tags/ref_pxtoemconversion.asp" target="_blank">
+                  <p class="small-p">ENERGETICA EXHIBITION
+                  </p>
+                </a>
+              </div>
+              <div class="content-bottom">
+                <p class="small-p">Mon, May 22, 2022
+                </p>
+                <p class="small-p">13:00 PM - 15:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item event">
+            <div class="grid-item-img ">
+              <img src="/assets/images/science-kidd.jpg" alt="Young star club girl">
+            </div>
+            <div class="event-content">
+              <div class="content-top">
+                <a href="https://www.w3schools.com/tags/ref_pxtoemconversion.asp" target="_blank">
+                  <p class="small-p">YOUNG STARS CLUB</p>
+                </a>
+              </div>
+              <div class="content-bottom">
+                <p class="small-p">Sat, January 18,2022
+                </p>
+                <p class="small-p">10:00 AM - 13:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="centered-cta">
+          <a href="#" class="primary-cta">MORE EVENTS</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="testimonial-section contact-testimonial">
+      <div class="container">
+        <div class="flex-center-center">
+          <div class="testimonial">
+            <h2>WHAT THEY SAY</h2>
+            <p class="light-p">“Great museum. Lots to do and see. 7 and 12 year old found lots of interesting things.
+              Space was a favorite for them.”
+            </p>
+            <h6>MARIA LATO</h6>
+            <p class="small-p">Manager at SpaceStar</p>
+          </div>
+          <div class="subscription-form">
+            <h5>SUBSCRIBE FOR GREAT DEALS</h5>
+            <p class="small-p">Subscribe today and be the first to get the best deals for our tours and more.</p>
+            <div class="form-field--email">
+              <label for="email"></label>
+              <div class="form-input">
+                <input type="email" id="email" name="email" />
+              </div>
+              <a href="#" class="form-btn">SUBSCRIBE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-logo">
+          <img src="/assets/images/logo-momogram.png" alt="logo">
+          <p>Community Science Museum.</p>
+          <div class="social-links--footer">
+            <a href="https://www.facebook.com/" target="_blank"><img src="assets/icons/facebook-icon.svg"
+                alt="Follow us on Facebook"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="assets/icons/twitter-icon.svg"
+                alt="Follow us on Twitter"></a>
+            <a href="https://www.instagram.com/accounts/login/" target="_blank"><img
+                src="assets/icons/instagram-icon.svg" alt="Follow us on Instagram"></a>
+          </div>
+        </div>
+        <div class="footer-address">
+          <div class="footer-address-content">
+            <img src="/assets/icons/address-icon.svg" alt="Address icon">
+
+            <a href="https://goo.gl/maps/duVrtkXXQ1BkqTgGA" class="go-to-address" target="_blank">Frognerveien 67, 0266
+              Oslo, Norway</a>
+          </div>
+          <div class="opening-hours--footer">
+            <div class="opening-hours-img">
+              <img src="/assets/icons/hours-icon.svg" alt="Opening hours">
+            </div>
+            <div class="opening-hours-text">
+              <p>Mon – Closed</p>
+              <p>Tue-Thu: 10:00 - 16:00 </p>
+              <p>Fri: 10:00 - 19:00 </p>
+              <p>Sat: 09:00 - 16:00</p>
+              <p>Sun: 09:00 - 13:00</p>
+            </div>
+          </div>
+        </div>
+        <nav class="footer-nav">
+          <div class="nav-links--footer">
+            <p>MENU</p>
+            <a href="index.html">Home</a>
+            <a href="#">News</a>
+            <a href="about.html">About</a>
+            <a href="#">Faq</a>
+            <a href="contact.html">Contact</a>
+
+          </div>
+          <div class="nav-links--footer">
+            <p>EXPLORE</p>
+            <a href="#">Cosmology</a>
+            <a href="#">Evolution</a>
+            <a href="#">Ecology</a>
+            <a href="#">Robotics and AI</a>
+            <a href="#">Biology and Medicine</a>
+          </div>
+          <div class="nav-links--footer">
+            <p>EXHIBITIONS</p>
+            <a href="#">Book A Tour</a>
+            <a href="#">For Children</a>
+            <a href="#">For Teachers</a>
+            <a href="#">For Researchers</a>
+            <a href="#">Upcoming Events</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <div class="copyrigt">
+          <p class="small-p">&copy; Copyright © 2021 Community Science Museum. </p>
+        </div>
+        <div class="policies">
+          <p class="small-p">Terms of Use </p>
+          <p class="small-p">Privacy Policy </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
 
 </body>
 

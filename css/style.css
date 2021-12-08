@@ -116,7 +116,7 @@ h1 {
   margin: 0 0 1.2rem 0;
 }
 h2 {
-  font-size: 3.125rem;
+  font-size: 3rem;
   line-height: 1.2em;
   margin: 0 0 1.2rem 0;
 }
@@ -136,7 +136,7 @@ h5 {
   margin: 0 0 1.2rem 0;
 }
 h6 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.3em;
   margin: 0 0 1.2rem 0;
 }
@@ -295,18 +295,15 @@ nav img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* height: 80vh; */
   position: relative;
 }
 
-.hero-content {
+.home-hero-section .hero-content {
   width: 60%;
-  /* margin-bottom: 4em; */
 }
 .home-hero-section p,
 h1 {
   color: var(--site-color);
-  /* margin-bottom: 0; */
 }
 
 /* <<<------------------ Explore Section ---------------->>>  */
@@ -337,7 +334,7 @@ section.explore-section {
   padding: 1em;
   background: white;
   border-radius: 1em;
-  box-shadow: 0 1px 10px rgb(0 0 0 / 20%);
+  box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
 }
 
 .large-card-content {
@@ -524,11 +521,14 @@ section.exhibition-section {
 .grid-item-img {
   display: flex;
   flex: 0 0 7em;
+  border-radius: 1em 0 0 1em;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
 }
 
 .grid-item-img img {
   object-fit: cover;
   border-radius: 1em 0 0 1em;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
 }
 
 .event-content {
@@ -540,7 +540,7 @@ section.exhibition-section {
   justify-content: center;
   gap: 0.5em;
   border-radius: 0 1em 1em 0;
-  box-shadow: 0 1px 10px rgb(0 0 0 / 20%);
+  box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
 }
 
 .content-top {
@@ -618,9 +618,9 @@ section.get-involved-section {
   grid-column: 1 / span 3;
   background: white;
   margin-top: 0.5em;
-  padding: 4em;
+  padding: 2em;
   flex-direction: column;
-  box-shadow: 0 1px 10px rgb(0 0 0 / 20%);
+  box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
   border-radius: 1em;
 }
 .first-card-content {
@@ -647,6 +647,8 @@ section.get-involved-section {
   flex-direction: column;
   gap: 0.6em;
   font-family: "Poppins";
+  border-left: 0.5px solid #cac9c9;
+  padding-left: 3em;
 }
 
 .card-address {
@@ -700,6 +702,89 @@ section.get-involved-section {
   font-weight: 500;
 }
 
+/* <<<------------------ News Section ---------------->>>  */
+
+.news-section {
+  padding-top: 0;
+}
+
+.two-col-grid {
+  display: grid;
+  padding-bottom: 1em;
+}
+
+.news-large-card {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 1em;
+}
+
+.news-large-card--content {
+  border-radius: 0 0 1em 1em;
+}
+
+.news-small-card {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
+  gap: 2em;
+}
+
+.news-large-card--content,
+.news-small-card--content1,
+.news-small-card--content2 {
+  background: white;
+  padding: 2em;
+  margin: 0;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
+}
+
+.news-small-card--content1,
+.news-small-card--content2 {
+  /* margin-bottom: 1em; */
+  border-radius: 1em;
+}
+
+.news-large-card .small-p {
+  font-family: poppins;
+  padding-bottom: 1em;
+  color: var(--tertiary-color);
+}
+
+.news-small-card--content1 .small-p {
+  font-family: poppins;
+  padding-bottom: 1em;
+  color: var(--primary-color);
+}
+
+.news-small-card--content2 .small-p {
+  font-family: poppins;
+  padding-bottom: 1em;
+  color: var(--quaternary-color);
+}
+
+.news-large-card .small-cta {
+  background: var(--tertiary-color);
+}
+
+.news-small-card--content1 .small-cta {
+  background: var(--primary-color);
+}
+.news-small-card--content2 .small-cta {
+  background: var(--quaternary-color);
+}
+
+.news-large-card--img {
+  height: 100%;
+}
+.news-large-card--img img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1em 1em 0 0;
+}
+
 /* <<<------------------ Testimonial Section ---------------->>>  */
 
 .testimonial-section {
@@ -707,7 +792,7 @@ section.get-involved-section {
 }
 
 .testimonial h2,
-.testimonial .large-p,
+.testimonial .light-p,
 .testimonial .small-p {
   color: var(--site-color);
 }
@@ -789,6 +874,167 @@ input {
   margin-right: 2em;
 }
 
+/* ###############================ Contact Page ===============############### */
+
+/* <<<------------------ Hero Section ---------------->>> */
+
+.bg-hero-section {
+  background: var(--tertiary-color);
+}
+
+.bg-hero-section .hero-content {
+  width: 100%;
+  text-align: center;
+}
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.breadcrumbs p {
+  color: var(--site-color);
+  margin: 0;
+}
+
+.fa-long-arrow-alt-right {
+  color: var(--site-color);
+}
+
+/* <<<------------------ Contact Section ---------------->>> */
+
+.contact-info {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 4em;
+}
+
+.contact-content {
+  display: flex;
+  width: 100%;
+}
+
+.contact-info-card {
+  flex: 1 1 100%;
+  background: var(--tertiary-color);
+}
+
+.contact-info-card-img {
+  width: 100%;
+  height: 20em;
+}
+.contact-info-card-img img {
+  height: 20em;
+  object-fit: cover;
+}
+
+.contact-info-card--top {
+  display: flex;
+  gap: 2em;
+  padding: 2em;
+  border: 0.2px solid rgba(255, 255, 255, 0.3);
+}
+.contact-info-card--top a {
+  color: var(--site-color);
+  font-family: poppins;
+  font-weight: 300;
+}
+
+.contact-info-card--top h6 {
+  color: var(--site-color);
+  font-family: poppins;
+  font-weight: 500;
+}
+
+.info-card-contacts--content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-card--bottom {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.contact-info-card--bottom img {
+  width: 3em;
+}
+
+.contact-form {
+  display: flex;
+  width: 100%;
+  margin-top: 2em;
+  flex-direction: column;
+}
+
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: calc(100% - 2em);
+}
+
+.form-field .small-p {
+  font-family: poppins;
+  font-weight: 300;
+}
+
+input {
+  height: 2.9em;
+  border: 0;
+  border-radius: 0.6em;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
+}
+textarea {
+  height: 7em;
+  border: 0;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
+}
+
+#submit {
+  display: inline-block;
+  font-family: poppins;
+  width: 20%;
+  font-size: var(--small-cta--font-size);
+  background: var(--tertiary-color);
+  color: var(--small-cta--color);
+  padding: 11px 20px;
+  border-radius: var(--small-cta--border-radius);
+}
+
+.contact-map {
+  padding-top: 2em;
+  width: 100%;
+}
+
+/* <<<------------------ Events Section ---------------->>> */
+
+.events-contact {
+  padding-bottom: 10em;
+}
+
+.events-contact .primary-cta {
+  background: var(--tertiary-color);
+}
+
+/* <<<------------------ Testimonial Section ---------------->>> */
+
+.contact-testimonial {
+  background: var(--tertiary-color);
+}
+
+.contact-testimonial .form-btn {
+  background: var(--tertiary-color);
+}
 /* <<<------------------ Carousel  ---------------->>>  */
 
 /* .carousel-wrapper {
@@ -1049,36 +1295,36 @@ footer {
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 2.1rem;
   }
 
   h3 {
-    font-size: 30px;
+    font-size: 1.8rem;
   }
   h4 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   h5 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   h6 {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   /* ###############================ Home Page ===============############### */
 
   /* <<<------------------ Hero Section ---------------->>>  (max-width: 800px) */
 
-  .hero-content {
+  .home-hero-section .hero-content {
     width: 80%;
     margin-bottom: 3em;
   }
 
-  /* <<<------------------ Get Involved Section ---------------->>>  */
+  /* <<<------------------ Get Involved Section ---------------->>>  (max-width: 800px)*/
 
   .three-col-grid {
     grid-template-columns: repeat(4, 1fr);
@@ -1087,6 +1333,18 @@ footer {
   .first-card-content {
     gap: 1em;
     flex-direction: column;
+  }
+
+  .card-contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.6em;
+    font-family: "Poppins";
+    border-left: 0;
+    border-top: 0.5px solid #cac9c9;
+    padding-top: 2em;
+    padding-left: 0;
   }
 
   .first-card {
@@ -1106,7 +1364,17 @@ footer {
     grid-column: 1 / span 4;
   }
 
-  /* <<<------------------ Testimonial Section ---------------->>>  */
+  /* <<<------------------ News Section ---------------->>>  (max-width: 800px)*/
+
+  .news-large-card {
+    grid-column: 1 / span 2;
+  }
+
+  .news-small-card {
+    grid-column: 1 / 3;
+    flex-direction: row;
+  }
+  /* <<<------------------ Testimonial Section ---------------->>> (max-width: 800px) */
 
   .form-input {
     position: relative;
@@ -1116,6 +1384,31 @@ footer {
   .form-btn {
     width: 100%;
     margin-right: 0;
+  }
+
+  /* ###############================ Contact Page ===============############### (max-width: 800px))*/
+
+  /* <<<------------------ Contact Section ---------------->>> (max-width: 800px)*/
+
+  .contact-info {
+    width: 80%;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 100%;
+  }
+
+  /* <<<------------------ Events Section ---------------->>> */
+
+  .events-contact {
+    padding-bottom: 6em;
   }
 
   /* ############### Footer ############### (max-width: 800px) */
@@ -1293,7 +1586,7 @@ footer {
 
   .first-card {
     grid-column: 1 / span 4;
-    padding: 2em;
+    padding: 2em 1.2em;
   }
 
   .first-card-content {
@@ -1305,15 +1598,45 @@ footer {
   .third-card,
   .fourth-card {
     grid-column: 1 / span 4;
+    padding: 2em 1.2em;
   }
 
-  /* <<<------------------ Testimonial Section ---------------->>>  */
+  /* <<<------------------ News Section ---------------->>> max-width: 640px) */
+
+  .news-small-card {
+    flex-direction: column;
+  }
+
+  .news-large-card--content,
+  .news-small-card--content1,
+  .news-small-card--content2 {
+    padding: 2em 1.2em;
+  }
+
+  /* <<<------------------ Testimonial Section ---------------->>> max-width: 640px) */
 
   .testimonial {
     width: 100%;
   }
 
   .subscription-form {
+    width: 100%;
+  }
+
+  /* ###############================ Contact Page ===============############### max-width: 640px)*/
+
+  /* <<<------------------ Contact Section ---------------->>> max-width: 640px)*/
+
+  .contact-info {
+    width: 100%;
+  }
+
+  .contact-info-card--top {
+    flex-direction: column;
+    padding: 2em 1.2em;
+  }
+
+  #submit {
     width: 100%;
   }
 
@@ -1391,17 +1714,16 @@ footer {
   } */
 }
 
-/* ############### Media Queries (max-width: 800px) Equal to 800px or less ############### */
+/* ############### Media Queries (min-width: 1441px) Equal to 1441px or larger ############### */
 
-/* <<<------------------ Global Styles  ---------------->>> (max-width: 800px) */
+/* <<<------------------ Global Styles  ---------------->>> (min-width: 1441px) */
 
 /* ###############================ Home Page ===============############### */
 
-/* <<<------------------ Hero Section ---------------->>>  (max-width: 800px) */
+/* <<<------------------ Hero Section ---------------->>>  (min-width: 1441px) */
 
 @media (min-width: 1441px) {
   .home-hero-section {
-    /* height: 70vh; */
     padding-top: 12em;
   }
 }
