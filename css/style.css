@@ -1,4 +1,10 @@
-/* ############### Website Global Styles ###############  */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############==== WEBSITE GLOBAL STYLES ====############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
 
 *,
 *:before,
@@ -198,7 +204,13 @@ p {
   cursor: pointer;
 }
 
-/* ############### Navigation ############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===== NAVIGATION DESKTOP ======############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
 
 header {
   background: white;
@@ -283,7 +295,13 @@ nav img {
   display: none;
 }
 
-/* ###############================ Home Page ===============############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############====== HOME PAGE DESKTOP ======############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
 
 /* <<<------------------ Hero Section ---------------->>> */
 
@@ -827,7 +845,7 @@ section.get-involved-section {
   text-align: center;
   margin: 0 auto;
   padding: 2em;
-  background: white;
+  background: var(--site-color);
   border-radius: 1em;
   width: 70%;
 }
@@ -874,7 +892,13 @@ input {
   margin-right: 2em;
 }
 
-/* ###############================ Contact Page ===============############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############==== CONTACT PAGE DESKTOP =====############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
 
 /* <<<------------------ Hero Section ---------------->>> */
 
@@ -892,9 +916,12 @@ input {
   align-items: center;
   gap: 1em;
 }
+.breadcrumbs a,
 .breadcrumbs p {
   color: var(--site-color);
   margin: 0;
+  font-family: poppins;
+  font-weight: 300;
 }
 
 .fa-long-arrow-alt-right {
@@ -903,7 +930,7 @@ input {
 
 /* <<<------------------ Contact Section ---------------->>> */
 
-.contact-info {
+.title-info {
   text-align: center;
   width: 60%;
   margin: 0 auto;
@@ -1035,6 +1062,151 @@ textarea {
 .contact-testimonial .form-btn {
   background: var(--tertiary-color);
 }
+
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############====== ABOUT PAGE DESKTOP =====############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+
+/* <<<------------------ Hero Section ---------------->>> */
+
+.hero-about {
+  background: var(--quaternary-color);
+}
+
+/* <<<------------------ About Section ---------------->>> */
+
+.split-card {
+  display: flex;
+  grid-column: 1 / span 2;
+  padding: 1em;
+  /* height: 30em; */
+  background: white;
+  border-radius: 1em;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
+}
+
+.split-card-content {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.split-card-text {
+  flex: 1 1 100%;
+  width: 100%;
+  background: var(--quaternary-color);
+  padding: 2em;
+}
+
+.split-card-img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1 1 50%;
+}
+
+.split-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.split-card-text > * {
+  color: white;
+}
+
+.round {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 40%;
+  padding: 2em;
+}
+
+.round img {
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.no-bg {
+  display: flex;
+  width: 100%;
+  background: transparent;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.no-bg > * {
+  color: var(--paragraph-color);
+}
+
+.bold-p {
+  font-family: poppins;
+  margin-bottom: 0;
+}
+
+/* <<<------------------ Team Section ---------------->>> */
+
+.team-section {
+  padding-top: 0;
+}
+
+/* .three-col-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+} */
+
+.three-col-grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.three-col-grid-img img {
+  margin-bottom: 0.5em;
+  object-position: top center;
+  object-fit: cover;
+}
+
+.three-col-grid-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.three-col-grid-content > * {
+  font-family: poppins;
+  margin-bottom: 0;
+}
+
+.three-col-grid-content .small-p {
+  font-weight: 300;
+}
+
+.team-social-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  width: 2em;
+  gap: 1em;
+}
+
+/* <<<------------------ Get Involved Section ---------------->>> */
+
+.get-involved-about .primary-cta {
+  background: var(--quaternary-color);
+}
+
+.testimonials-about,
+.testimonials-about .form-btn {
+  background: var(--quaternary-color);
+}
+
 /* <<<------------------ Carousel  ---------------->>>  */
 
 /* .carousel-wrapper {
@@ -1176,7 +1348,13 @@ textarea {
   opacity: 1;
 } */
 
-/* ############### Footer ############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############======= FOOTER DESKTOP ========############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
 
 footer {
   background: white;
@@ -1284,9 +1462,18 @@ footer {
   gap: 2em;
 }
 
-/* ############### Media Queries (max-width: 800px) Equal to 800px or less ############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ############# MEDIA QUERIES (max-width: 800px) ############## */
+/* ###############=== Equal to 800px or less ====############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
 
-/* <<<------------------ Global Styles  ---------------->>> (max-width: 800px) */
+/* ###############===============================############### */
+/* ###############====== GLOBAL STYLES (max-width: 800px) ====== */
+/* ###############===============================############### */
 
 @media (max-width: 800px) {
   section {
@@ -1314,20 +1501,21 @@ footer {
   h6 {
     font-size: 1.125rem;
   }
+  /* ###############===============================############### */
+  /* ##########====== HOME PAGE (max-width: 800px) =====########## */
+  /* ###############===============================############### */
 
-  /* ###############================ Home Page ===============############### */
-
-  /* <<<------------------ Hero Section ---------------->>>  (max-width: 800px) */
+  /* <<<------------ Hero Section (max-width: 800px) ---------->>> */
 
   .home-hero-section .hero-content {
     width: 80%;
     margin-bottom: 3em;
   }
 
-  /* <<<------------------ Get Involved Section ---------------->>>  (max-width: 800px)*/
+  /* <<<-------- Get Involved Section (max-width: 800px) ------>>> */
 
   .three-col-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .first-card-content {
@@ -1355,16 +1543,18 @@ footer {
   .second-card {
     display: flex;
     flex-direction: column;
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 4;
+    grid-row: 2;
   }
   .third-card {
-    grid-column: 3 / span 2;
+    grid-column: 1 / span 4;
+    grid-row: 2;
   }
   .fourth-card {
     grid-column: 1 / span 4;
   }
 
-  /* <<<------------------ News Section ---------------->>>  (max-width: 800px)*/
+  /* <<<------------ News Section (max-width: 800px) ---------->>> */
 
   .news-large-card {
     grid-column: 1 / span 2;
@@ -1374,7 +1564,7 @@ footer {
     grid-column: 1 / 3;
     flex-direction: row;
   }
-  /* <<<------------------ Testimonial Section ---------------->>> (max-width: 800px) */
+  /* <<<-------- Testimonial Section (max-width: 800px) ------>>> */
 
   .form-input {
     position: relative;
@@ -1386,11 +1576,13 @@ footer {
     margin-right: 0;
   }
 
-  /* ###############================ Contact Page ===============############### (max-width: 800px))*/
+  /* ###############===============================############### */
+  /* ##########==== CONTACT PAGE (max-width: 800px) ====########## */
+  /* ###############===============================############### */
 
-  /* <<<------------------ Contact Section ---------------->>> (max-width: 800px)*/
+  /* <<<---------- Contact Section (max-width: 800px) --------->>> */
 
-  .contact-info {
+  .title-info {
     width: 80%;
   }
 
@@ -1409,13 +1601,31 @@ footer {
     width: 25%;
   }
 
-  /* <<<------------------ Events Section ---------------->>> */
+  /* <<<----------- Events Section (max-width: 800px) ---------->>> */
 
   .events-contact {
     padding-bottom: 6em;
   }
 
-  /* ############### Footer ############### (max-width: 800px) */
+  /* ###############===============================############### */
+  /* ##########===== ABOUT PAGE (max-width: 800px) =====########## */
+  /* ###############===============================############### */
+
+  /* <<<----------- About Section (max-width: 800px) ---------->>> */
+
+  .split-card {
+    height: auto;
+  }
+
+  .split-card-content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+
+  /* ###############===============================############### */
+  /* ##########======= FOOTER (max-width: 800px) =======########## */
+  /* ###############===============================############### */
 
   .footer-logo {
     align-items: flex-start;
@@ -1450,14 +1660,29 @@ footer {
   }
 }
 
-/* ############### Media Queries (max-width: 640px) Equal to 640px or less ############### */
-/* ############### Navigation ############### (max-width: 640px) */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ############# MEDIA QUERIES (max-width: 640px) ############## */
+/* ###############=== Equal to 640px or less ====############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+
+/* ###############===============================############### */
+/* #######====== GLOBAL STYLES (max-width: 640px) =======####### */
+/* ###############===============================############### */
 
 @media (max-width: 640px) {
   .container {
     width: 100vw;
     padding: 0 1.5em;
   }
+
+  /* ###############===============================############### */
+  /* #######======== NAVIGATION (max-width: 640px) ========####### */
+  /* ###############===============================############### */
+
   .home-header {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1516,9 +1741,11 @@ footer {
     width: 2em;
   }
 
-  /* ###############================ Home Page ===============############### */
+  /* ###############===============================############### */
+  /* #######======== HOME PAGE (max-width: 640px) =========####### */
+  /* ###############===============================############### */
 
-  /* <<<------------------ Hero Section ---------------->>>  (max-width: 640px)*/
+  /* <<<------------ Hero Section (max-width: 640px) ---------->>> */
 
   .home-hero-section {
     background-position: center;
@@ -1529,7 +1756,7 @@ footer {
     width: 100%;
   }
 
-  /* <<<------------------ Explore Section ---------------->>>  (max-width: 640px) */
+  /* <<<---------- Explore Section (max-width: 640px) =-------->>> */
 
   .explore-section {
     transform: translate(0%, -5%);
@@ -1565,7 +1792,7 @@ footer {
     background-position: left;
   }
 
-  /* <<<------------------ Exhibition Section ---------------->>> (max-width: 640px) */
+  /* <<<--------- Exhibition Section (max-width: 640px) ------->>> */
 
   .two-col-grid {
     display: grid;
@@ -1574,7 +1801,7 @@ footer {
     margin-top: 3em;
   }
 
-  /* <<<------------------ Shop / Drinks / Food Section ---------------->>> (max-width: 640px) */
+  /* <<<--- Shop / Drinks / Food Section (max-width: 640px) --->>> */
 
   .split-section {
     flex-direction: column;
@@ -1586,7 +1813,7 @@ footer {
     object-fit: cover;
   }
 
-  /* <<<------------------ Get Involved Section ---------------->>> (max-width: 640px)  */
+  /* <<<------- Get Involved Section (max-width: 640px) ------->>> */
 
   .first-card {
     grid-column: 1 / span 4;
@@ -1605,7 +1832,7 @@ footer {
     padding: 2em 1.2em;
   }
 
-  /* <<<------------------ News Section ---------------->>> max-width: 640px) */
+  /* <<<------------ News Section max-width: 640px) ----------->>> */
 
   .news-small-card {
     flex-direction: column;
@@ -1617,7 +1844,7 @@ footer {
     padding: 2em 1.2em;
   }
 
-  /* <<<------------------ Testimonial Section ---------------->>> max-width: 640px) */
+  /* <<<--------- Testimonial Section max-width: 640px) ------->>> */
 
   .testimonial {
     width: 100%;
@@ -1627,12 +1854,15 @@ footer {
     width: 100%;
   }
 
-  /* ###############================ Contact Page ===============############### max-width: 640px)*/
+  /* ###############===============================############### */
+  /* #######======- CONTACT PAGE (max-width: 640px) =======####### */
+  /* ###############===============================############### */
 
-  /* <<<------------------ Contact Section ---------------->>> max-width: 640px)*/
+  /* <<<----------- Contact Section max-width: 640px) --------->>> */
 
-  .contact-info {
+  .title-info {
     width: 100%;
+    margin-bottom: 2em;
   }
 
   .contact-info-card--top {
@@ -1644,7 +1874,43 @@ footer {
     width: 100%;
   }
 
-  /* ############### Footer ############### (max-width: 640px) */
+  /* ###############===============================############### */
+  /* #######======== ABOUT PAGE (max-width: 640px) ========####### */
+  /* ###############===============================############### */
+
+  /* <<<----------- About Section  max-width: 640px) ---------->>> */
+
+  .split-card-text {
+    padding: 2em 1em;
+  }
+
+  .split-card {
+    grid-column: 1;
+  }
+
+  .round {
+    padding: 2em 0;
+  }
+
+  .round img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .no-bg {
+    padding: 0 0 2em 0;
+  }
+
+  /* <<<------------ Team Section max-width: 640px) =---------->>> */
+
+  .three-col-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ###############===============================############### */
+  /* #######========== FOOTER (max-width: 640px) ==========####### */
+  /* ###############===============================############### */
+
   .footer-logo {
     grid-column: 1 / 5;
     align-items: center;
@@ -1718,13 +1984,19 @@ footer {
   } */
 }
 
-/* ############### Media Queries (min-width: 1441px) Equal to 1441px or larger ############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ############# MEDIA QUERIES (min-width: 1441px) ############# */
+/* ##############=== Equal to 1441px or larger ===############## */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
 
-/* <<<------------------ Global Styles  ---------------->>> (min-width: 1441px) */
+/* ###############===============================############### */
+/* #######======= HOME PAGE (min-width: 1441px)  ========####### */
+/* ###############===============================############### */
 
-/* ###############================ Home Page ===============############### */
-
-/* <<<------------------ Hero Section ---------------->>>  (min-width: 1441px) */
+/* <<<----------- Hero Section (min-width: 1441px) ---------->>> */
 
 @media (min-width: 1441px) {
   .home-hero-section {
