@@ -520,7 +520,6 @@ section.exhibition-section {
 
 .events-section {
   padding: 0;
-  /* background: var(--primary-color); */
 }
 
 .events-section h2,
@@ -761,7 +760,6 @@ section.get-involved-section {
 
 .news-small-card--content1,
 .news-small-card--content2 {
-  /* margin-bottom: 1em; */
   border-radius: 1em;
 }
 
@@ -1083,7 +1081,6 @@ textarea {
   display: flex;
   grid-column: 1 / span 2;
   padding: 1em;
-  /* height: 30em; */
   background: white;
   border-radius: 1em;
   box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
@@ -1154,12 +1151,6 @@ textarea {
 .team-section {
   padding-top: 0;
 }
-
-/* .three-col-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2em;
-} */
 
 .three-col-grid-item {
   display: flex;
@@ -1749,7 +1740,6 @@ footer {
 
   .home-hero-section {
     background-position: center;
-    /* height: 100vh; */
   }
 
   .hero-content {
