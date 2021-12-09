@@ -2317,6 +2317,10 @@ footer {
     gap: 2em;
     padding-bottom: 1em;
   }
+
+  .copyrigt {
+    text-align: center;
+  }
 }
 
 /* ###############===============================############### */
