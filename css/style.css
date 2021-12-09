@@ -1206,7 +1206,7 @@ textarea {
 /* ###############===============================############### */
 /* ###############===============================############### */
 
-/* <<<------------------ Hero Section ---------------->>> */
+/* <<<---------------------- Hero Section ------------------->>> */
 
 .for-kids-page {
   display: flex;
@@ -1218,9 +1218,46 @@ textarea {
   background-position: bottom center;
 }
 
-/* <<<------------------ Carousel  ---------------->>>  */
+.for-kids-page .hero-content {
+  margin-bottom: 0;
+}
 
-/* .carousel-wrapper {
+/* <<<------------------- Two Cards Section ----------------->>> */
+
+.two-card-section .different-bg {
+  background: var(--tertiary-color);
+  padding: 2em;
+}
+
+.equal-col-flex {
+  display: flex;
+  gap: 2em;
+}
+
+.col-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  margin: 1em 0 1em 0;
+}
+
+.col-item > * {
+  color: var(--site-color);
+}
+
+/* <<<--------------------- Split Section ------------------->>> */
+
+.split-section {
+  padding-top: 0;
+}
+
+/* <<<------------------- Carousel Section ----------------->>>  */
+
+.carousel-section {
+  padding: 0;
+}
+
+.carousel-wrapper {
   display: flex;
   overflow-y: hidden;
   scroll-snap-type: y mandatory;
@@ -1239,7 +1276,8 @@ textarea {
   padding: 1em;
   margin: 0.5em;
   background: white;
-  box-shadow: 0 1px 10px rgb(0 0 0 / 20%);
+  border-radius: 1em;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
@@ -1259,17 +1297,17 @@ textarea {
   justify-content: center;
 }
 
-.slide-card .img-1 {
+.slide-card .img-slide-1 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/assets/images/science--for-kids.jpg);
+    url(/assets/images/science-for-teachers.jpg);
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
 }
 
-.slide-card .img-2 {
+.slide-card .img-slide-2 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/assets/images/science-for-teachers.jpg);
+    url(/assets/images/science-researchers.jpg);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -1353,11 +1391,123 @@ textarea {
 #slide-1:target ~ .slide-1 {
   opacity: 1;
 }
-#slide-2:target ~ .slide-2,
+#slide-2:target ~ .slide-2 {
+  z-index: 3;
+  opacity: 1;
+}
+
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* #############====== COSMOLOGY PAGE DESKTOP ======############# */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+
+/* <<<---------------------- Hero Section ------------------->>> */
+
+.cosmology-page {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/cosmology.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* <<<------------------- Carousel Section ----------------->>>  */
+
+.slide-card .img-1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/science--for-kids.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.slide-card .img-2 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/science-for-teachers.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.slide-card .img-3 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/science-researchers.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* show third slide */
 #slide-3:target ~ .slide-3 {
   z-index: 3;
   opacity: 1;
-} */
+}
+
+/* <<<--------------------- Grid Section ------------------->>>  */
+
+.cosmology-grid-section {
+  padding-bottom: 0;
+}
+
+.five-col-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1em;
+}
+
+.grid-item {
+  display: flex;
+}
+
+.item-1 {
+  grid-column: 1 / span 3;
+}
+
+.item-2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.item-3 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.item-4 {
+  grid-column: 3;
+  grid-row: 2;
+}
+.item-5 {
+  grid-column: 1;
+  grid-row: 3;
+}
+.item-6 {
+  grid-column: 2;
+  grid-row: 3;
+}
+.item-7 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.item-8 {
+  grid-column: 4 / span 2;
+  grid-row: 1 / span 3;
+}
+
+.item-8 img {
+  object-fit: cover;
+}
+
+/* <<<--------------------- Two Card Section ------------------->>>  */
+
+.two-card-section .primary-cta {
+  background: var(--quaternary-color);
+}
 
 /* ###############===============================############### */
 /* ###############===============================############### */
@@ -1598,7 +1748,7 @@ footer {
   }
 
   .contact-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .form-field {
@@ -1628,25 +1778,97 @@ footer {
     height: auto;
   }
 
+  .split-card .column-reverse {
+    flex-direction: column-reverse;
+  }
+
   .split-card-content {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
   }
 
-  /* ###############=============================############### */
   /* ###############===============================############### */
   /* ###############===============================############### */
-  /* #######====== FOR KIDS PAGE (max-width: 800px) ======####### */
+  /* ###############===============================############### */
+  /* #######====== FOR KIDS PAGE (max-width: 800px) =======####### */
   /* ###############===============================############### */
   /* ###############===============================############### */
   /* ###############===============================############### */
 
-  /* <<<----------- Hero Section (max-width: 800px)---------->>> */
+  /* <<<------------ Hero Section (max-width: 800px) ---------->>> */
 
-  /* .for-kids-page {
-    height: 70vh;
-  } */
+  .for-kids-page .hero-content {
+    margin-bottom: 0;
+  }
+
+  /* <<<--------- Two Cards Section (max-width: 800px) -------->>> */
+
+  .equal-col-flex {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .col-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    margin: 1em 0 1em 0;
+  }
+
+  .col-item > * {
+    color: var(--site-color);
+  }
+
+  /* <<<--------- Carousel Section (max-width: 800px) -------->>> */
+  .carousel-section {
+    padding-bottom: 6em;
+  }
+
+  .carousel-wrapper {
+    height: 22em;
+  }
+
+  .carousel-slide {
+    margin: 0;
+  }
+
+  .slide-card .img-slide-1 {
+    background-position: right center;
+  }
+
+  .slide-card .img-slide-2 {
+    background-position: left center;
+  }
+
+  .slide-img-content {
+    padding: 1em;
+  }
+
+  .slide-cta-content {
+    padding: 2em 1em;
+  }
+
+  .arrow-prev {
+    left: 40%;
+  }
+  .arrow-next {
+    right: 40%;
+  }
+
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+  /* #######====== COSMOLOGY PAGE (max-width: 800px) ======####### */
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+
+  /* <<<---------------------- Hero Section ------------------->>> */
+
+  .cosmology-page .hero-content {
+    margin-bottom: 0;
+  }
 
   /* ###############===============================############### */
   /* ##########======= FOOTER (max-width: 800px) =======########## */
@@ -1776,7 +1998,7 @@ footer {
     background-position: center;
   }
 
-  .hero-content {
+  .home-hero-section .hero-content {
     width: 100%;
   }
 
@@ -1948,6 +2170,99 @@ footer {
     background-position: top center;
   }
 
+  .for-kids-page .hero-content {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  /* <<<--------- Two Cards Section (max-width: 640px) -------->>> */
+
+  .two-card-section .different-bg {
+    padding: 1em;
+  }
+
+  /* <<<--------- Carousel Section (max-width: 640px) -------->>> */
+
+  .carousel-section {
+    padding-bottom: 3em;
+  }
+
+  .carousel-wrapper {
+    height: 40em;
+  }
+
+  .carousel-slide {
+    height: 35em;
+  }
+
+  .slide-card {
+    flex-direction: column;
+  }
+
+  .arrow-prev {
+    left: 35%;
+  }
+  .arrow-next {
+    right: 35%;
+  }
+
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+  /* #######====== COSMOLOGY PAGE (max-width: 640px) ======####### */
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+
+  /* <<<---------------------- Hero Section ------------------->>> */
+
+  .cosmology-page {
+    height: 77vh;
+  }
+
+  /* <<<--------------------- Grid Section ------------------->>>  */
+
+  .item-1 {
+    grid-column: 1 / span 6;
+    grid-row: 2;
+  }
+
+  .item-2 {
+    grid-column: 1 / span 6;
+    grid-row: 3;
+  }
+
+  .item-3 {
+    grid-column: 1 / span 6;
+    grid-row: 4;
+  }
+
+  .item-4 {
+    grid-column: 1 / span 6;
+    grid-row: 5;
+  }
+  .item-5 {
+    grid-column: 1 / span 6;
+    grid-row: 6;
+  }
+  .item-6 {
+    grid-column: 1 / span 6;
+    grid-row: 7;
+  }
+  .item-7 {
+    grid-column: 1 / span 6;
+    grid-row: 8;
+  }
+
+  .item-8 {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+  }
+
+  .item-8 img {
+    height: 70vh;
+  }
+
   /* ###############===============================############### */
   /* #######========== FOOTER (max-width: 640px) ==========####### */
   /* ###############===============================############### */
@@ -2002,27 +2317,6 @@ footer {
     gap: 2em;
     padding-bottom: 1em;
   }
-
-  /* <<<------------------ Carousel  ---------------->>>  */
-
-  /* .carousel-wrapper {
-    height: 45em;
-  }
-
-  .slide-card {
-    flex-direction: column;
-  }
-
-  .slide-img-content {
-    flex-basis: 15em;
-  }
-
-  .arrow-prev {
-    left: 35%;
-  }
-  .arrow-next {
-    right: 35%;
-  } */
 }
 
 /* ###############===============================############### */
@@ -2055,6 +2349,20 @@ footer {
   /* <<<----------- Hero Section (min-width: 1441px) ---------->>> */
 
   .for-kids-page {
+    height: 70vh;
+  }
+
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+  /* #######====== COSMOLOGY PAGE (min-width: 1441px) =====####### */
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+
+  /* <<<---------------------- Hero Section ------------------->>> */
+
+  .cosmology-page {
     height: 70vh;
   }
 }
