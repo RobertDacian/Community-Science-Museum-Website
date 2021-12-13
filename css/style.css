@@ -1253,14 +1253,19 @@ textarea {
 
 /* <<<--------------------- Split Section ------------------->>> */
 
-.split-section {
-  padding-top: 0;
+section.split-section {
+  padding: 0;
+}
+
+.no-margin {
+  margin-bottom: 0;
 }
 
 /* <<<------------------- Carousel Section ----------------->>>  */
 
 .carousel-section {
-  padding: 0;
+  padding-top: 10em;
+  padding-bottom: 0;
 }
 
 .carousel-wrapper {
@@ -1431,7 +1436,7 @@ textarea {
 .five-col-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 1em;
+  gap: 2em;
 }
 
 .grid-item {
@@ -1488,6 +1493,13 @@ textarea {
   background: var(--quaternary-color);
 }
 
+/* <<<---------------------- Exhibition Section ------------------->>> */
+
+section.cosmology {
+  /* padding-top: 10em; */
+  padding-bottom: 0;
+}
+
 /* <<<------------------- Carousel Section ----------------->>>  */
 
 .slide-card .img-1 {
@@ -1533,6 +1545,97 @@ textarea {
 /* ###############===============================############### */
 
 /* <<<---------------------- Hero Section ------------------->>> */
+
+.explore-page {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/guided-tours.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.explore-page .hero-content {
+  margin-bottom: 0;
+}
+
+/* <<<---------------------- Grid Section ------------------->>> */
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+.grid-item-3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.grid-item-4 {
+  grid-column: 2;
+  grid-row: 1;
+  object-fit: cover;
+}
+
+.grid-item-4 img {
+  object-fit: cover;
+}
+
+.grid-item-4 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* <<<---------------------- Three Col Grid Section ------------------->>> */
+
+.three-col-grid h4 {
+  color: var(--site-color);
+  font-weight: 600;
+}
+
+.card-item {
+  padding: 2em;
+  border-radius: 1em;
+}
+
+.card-item-1 {
+  background: var(--primary-color);
+  color: var(--site-color);
+}
+.card-item-1 .small-cta {
+  background: var(--site-color);
+  color: var(--paragraph-color);
+}
+
+.card-item-2 {
+  background: var(--tertiary-color);
+  color: var(--site-color);
+}
+
+.card-item-3 {
+  background: var(--quaternary-color);
+  color: var(--site-color);
+}
+
+.card-item-3 .small-cta {
+  background: var(--tertiary-color);
+  color: var(--site-color);
+}
+
+/* <<<---------------------- Exhibition Section ------------------->>> */
+
+section.explore {
+  padding-top: 10em;
+  padding-bottom: 0;
+}
+
+/* <<<---------------------- Events Section ------------------->>> */
+
+section.explore-2 {
+  padding-bottom: 10em;
+}
 
 /* ###############===============================############### */
 /* ###############===============================############### */
@@ -1848,6 +1951,7 @@ footer {
   /* <<<--------- Carousel Section (max-width: 800px) -------->>> */
   .carousel-section {
     padding-bottom: 6em;
+    padding-top: 6em;
   }
 
   .carousel-wrapper {
@@ -1893,6 +1997,32 @@ footer {
 
   .cosmology-page .hero-content {
     margin-bottom: 0;
+  }
+
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+  /* ########====== EXPLORE PAGE (max-width: 800px) ======######## */
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+
+  /* <<<---------------------- Hero Section ------------------->>> */
+
+  .explore-page .hero-content {
+    margin-bottom: 0;
+  }
+
+  /* <<<---------- Exhibition Section (max-width: 800px) ------>>> */
+
+  section.explore {
+    padding-top: 6em;
+  }
+
+  /* <<<------------ Events Section (max-width: 800px) --------->>> */
+
+  section.explore-2 {
+    padding-bottom: 6em;
   }
 
   /* ###############===============================############### */
@@ -2290,6 +2420,52 @@ footer {
 
   .item-8 img {
     height: 70vh;
+  }
+
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+  /* ########====== EXPLORE PAGE (max-width: 640px) ======######## */
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+  /* ###############===============================############### */
+
+  /* <<<---------------------- Hero Section ------------------->>> */
+
+  .explore-page {
+    height: 77vh;
+  }
+
+  /* <<<---------------------- Grid Section ------------------->>> */
+
+  .grid-item-1 {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+
+  .grid-item-2 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+
+  .grid-item-3 {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+  }
+
+  .grid-item-4 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .grid-item-5 {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+  }
+
+  .grid-item-6 {
+    grid-column: 1 / span 2;
+    grid-row: 6;
   }
 
   /* ###############===============================############### */
