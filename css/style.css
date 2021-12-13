@@ -422,7 +422,8 @@ section.explore-section {
 }
 
 .large-card .content-1 .small-cta {
-  background: var(--secondary-color);
+  background: var(--site-color);
+  color: var(--paragraph-color);
 }
 
 .large-card .content-2 .small-cta {
@@ -589,6 +590,11 @@ section.exhibition-section {
   gap: 4em;
   justify-content: center;
   align-items: center;
+  margin-bottom: 6em;
+}
+
+.last {
+  margin-bottom: 0;
 }
 
 .reverse {
@@ -1416,37 +1422,6 @@ textarea {
   background-position: center;
 }
 
-/* <<<------------------- Carousel Section ----------------->>>  */
-
-.slide-card .img-1 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/assets/images/science--for-kids.jpg);
-  background-size: cover;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-}
-
-.slide-card .img-2 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/assets/images/science-for-teachers.jpg);
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
-.slide-card .img-3 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/assets/images/science-researchers.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-/* show third slide */
-#slide-3:target ~ .slide-3 {
-  z-index: 3;
-  opacity: 1;
-}
-
 /* <<<--------------------- Grid Section ------------------->>>  */
 
 .cosmology-grid-section {
@@ -1461,6 +1436,10 @@ textarea {
 
 .grid-item {
   display: flex;
+}
+
+.grid-item img {
+  border-radius: 1em;
 }
 
 .item-1 {
@@ -1508,6 +1487,52 @@ textarea {
 .two-card-section .primary-cta {
   background: var(--quaternary-color);
 }
+
+/* <<<------------------- Carousel Section ----------------->>>  */
+
+.slide-card .img-1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/science--for-kids.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.slide-card .img-2 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/science-for-teachers.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.slide-card .img-3 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/science-researchers.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* show third slide */
+#slide-3:target ~ .slide-3 {
+  z-index: 3;
+  opacity: 1;
+}
+
+.slide-card .content-1 .small-cta {
+  background: var(--site-color);
+  color: var(--paragraph-color);
+}
+
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* #############====== EXPLORE PAGE DESKTOP ======############# */
+/* ###############===============================############### */
+/* ###############===============================############### */
+/* ###############===============================############### */
+
+/* <<<---------------------- Hero Section ------------------->>> */
 
 /* ###############===============================############### */
 /* ###############===============================############### */
@@ -2054,9 +2079,13 @@ footer {
     gap: 2em;
   }
 
+  .img-content {
+    width: 100%;
+  }
+
   .img-content img {
-    height: 100%;
     object-fit: cover;
+    height: 15em;
   }
 
   /* <<<------- Get Involved Section (max-width: 640px) ------->>> */
