@@ -1439,12 +1439,13 @@ section.split-section {
   gap: 2em;
 }
 
-.grid-item {
+.grid-item-cosmology {
   display: flex;
 }
 
-.grid-item img {
+.grid-item-cosmology img {
   border-radius: 1em;
+  object-fit: cover;
 }
 
 .item-1 {
@@ -1561,6 +1562,10 @@ section.cosmology {
 }
 
 /* <<<---------------------- Grid Section ------------------->>> */
+
+.grid-item-explore img {
+  border-radius: 1em;
+}
 
 .explore-grid {
   display: grid;
@@ -1999,6 +2004,12 @@ footer {
     margin-bottom: 0;
   }
 
+  /* <<<--------------------- Grid Section ------------------->>>  */
+
+  .cosmology-grid-section {
+    padding-bottom: 0;
+  }
+
   /* ###############===============================############### */
   /* ###############===============================############### */
   /* ###############===============================############### */
@@ -2381,6 +2392,10 @@ footer {
 
   /* <<<--------------------- Grid Section ------------------->>>  */
 
+  .cosmology-grid-section {
+    padding-bottom: 0;
+  }
+
   .item-1 {
     grid-column: 1 / span 6;
     grid-row: 2;
@@ -2389,28 +2404,34 @@ footer {
   .item-2 {
     grid-column: 1 / span 6;
     grid-row: 3;
+    height: 12em;
   }
 
   .item-3 {
     grid-column: 1 / span 6;
     grid-row: 4;
+    height: 12em;
   }
 
   .item-4 {
     grid-column: 1 / span 6;
     grid-row: 5;
+    height: 12em;
   }
   .item-5 {
     grid-column: 1 / span 6;
     grid-row: 6;
+    height: 12em;
   }
   .item-6 {
     grid-column: 1 / span 6;
     grid-row: 7;
+    height: 12em;
   }
   .item-7 {
     grid-column: 1 / span 6;
     grid-row: 8;
+    height: 12em;
   }
 
   .item-8 {
