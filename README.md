@@ -26,10 +26,11 @@ Tools and techniques used in the project:
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+Please feel free to contact me on social media or by email.
 
 [My Facebook](https://www.facebook.com/pax.dacian)
 
 [My LinkedIn](https://www.linkedin.com/in/robert-dacian)
+* E-mail - paxdacian@icloud.com
 
 
