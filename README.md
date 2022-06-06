@@ -1,6 +1,6 @@
 # Your project title
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://github.com/RobertDacian/Community-Science-Museum-Website/blob/094c72e064c265f19a4779a987182df46545e0f2/assets/images/cosmology.jpg)
 
 A simple overview of the use/purpose of the project.
 
