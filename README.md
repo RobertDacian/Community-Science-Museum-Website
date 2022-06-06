@@ -1,25 +1,22 @@
-# Your project title
+# Community Science Museum
 
 ![image](https://github.com/RobertDacian/Community-Science-Museum-Website/blob/094c72e064c265f19a4779a987182df46545e0f2/assets/images/cosmology.jpg)
 
-A simple overview of the use/purpose of the project.
+Community Science Museum is first semester project exam for the front-end web development course at Noroff.no.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
-
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
+The project supoused to show my vocational knowledge to practical problems in web development, the use of industry-relevant tools, techniques and expressions in design process and development, also a clear documentation of the work process, issues and measures taken in the design implementation.
 
 ## Built With
 
-You can list a the tech stack that you've used over here
+Tools and techniques used in the project:
 
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- Trello for project planning
+- Adobe XD for design
+- VSC as code editor
+- HTML5
+- CSS3
 
 ## Getting Started
 
