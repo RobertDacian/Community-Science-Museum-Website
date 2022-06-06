@@ -31,6 +31,6 @@ Please feel free to contact me on social media or by email.
 [My Facebook](https://www.facebook.com/pax.dacian)
 
 [My LinkedIn](https://www.linkedin.com/in/robert-dacian)
-* E-mail - paxdacian@icloud.com
+paxdacian@icloud.com
 
 
