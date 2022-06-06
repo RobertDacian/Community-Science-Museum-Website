@@ -30,6 +30,6 @@ This is where you can leave your social links for people to contact you, such as
 
 [My Facebook](https://www.facebook.com/pax.dacian)
 
-[My LinkedIn page](www.linkedin.com/in/robert-dacian)
+[My LinkedIn](www.linkedin.com/in/robert-dacian)
 
 
